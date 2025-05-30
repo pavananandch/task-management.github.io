@@ -6,7 +6,7 @@ import { LOGOUT_REQUEST } from "../../utils/constants";
 import { useNavigate } from "react-router";
 
 const Header = () => {
-    const {state, setState} = useContext(AuthContext);
+    const {state} = useContext(AuthContext);
     const {dispatch} = useContext(AuthContext);
     const {userName} = JSON.parse(getData('user'));
     const navigate = useNavigate();

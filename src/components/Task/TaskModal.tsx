@@ -25,7 +25,7 @@ const TaskModal = ({
   const [description, setDescription] = useState("");
   const [status, setStatus] = useState("");
   const [priority, setPriority] = useState(0);
-  const [dueDate, setDuedate] = useState(new Date());
+  const [dueDate, setDuedate] = useState("");
   
   const updateForm = () => {
     setTitle(selectedTask.title);

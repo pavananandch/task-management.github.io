@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import Header from "./header"
 import { AuthContext } from "../../context/AuthContext";
+import Header from "./Header";
 
 const Layout = ({children}) => {
-    const {state, setState} = useContext(AuthContext);
+    const { state } = useContext(AuthContext);
     const showHeader = state.isAuthenticated;
     return (
         <>

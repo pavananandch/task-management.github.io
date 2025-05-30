@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 
 const HomePage = () => {
     const navigate = useNavigate();
-    const {state, setState} = useContext(AuthContext);
+    const {state} = useContext(AuthContext);
     useEffect(() => {
         console.log({state})
         if(localStorage.getItem('token')) {

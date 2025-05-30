@@ -11,7 +11,7 @@ import { AuthContext } from './context/AuthContext';
 
 function App() {
 
-  const {state, setState} = useContext(AuthContext);
+  const {state} = useContext(AuthContext);
   const isAuthenticated = state.isAuthenticated;
   const ProtectedRoute = () => {
     return isAuthenticated ? <Outlet /> : <Navigate to="/login" />
